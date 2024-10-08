@@ -9,6 +9,7 @@ function Nav() {
           <img src={logo} className="mx-2" height={33} width={100} alt="logo" />
         </a>
       </div>
+
       <div className="m-8 flex items-center justify-center gap-6 text-2xl">
         <a
           href="https://www.linkedin.com/in/abdellah-bouzekri-97a177243/ "
