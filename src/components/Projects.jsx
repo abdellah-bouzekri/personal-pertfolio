@@ -2,16 +2,15 @@ import React from "react";
 import { motion } from "framer-motion";
 import { PROJECTS } from "../constants/index";
 import { ExternalLink } from "lucide-react";
-import { FaExternalLinkAlt, FaExternalLinkSquareAlt } from "react-icons/fa";
 
 const ProjectCard = ({ project, index }) => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="mb-8 overflow-hidden rounded-lg bg-transparent shadow-lg transition-all duration-300 hover:shadow-2xl">
-      <div className="relative overflow-hidden">
+    <motion.div className="mb-8 overflow-hidden rounded-lg bg-transparent shadow-lg transition-all duration-300 hover:shadow-2xl">
+      <motion.div
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: -100 }}
+        transition={{ duration: 1 }}
+        className="relative overflow-hidden">
         <img
           src={project.image}
           alt={project.title}
@@ -28,8 +27,12 @@ const ProjectCard = ({ project, index }) => {
             </a>
           </div>
         </div>
-      </div>
-      <div className="p-4">
+      </motion.div>
+      <motion.div
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: 100 }}
+        transition={{ duration: 1 }}
+        className="p-4">
         <h3 className="mb-2 text-xl font-bold text-gray-100">
           {project.title}
         </h3>
@@ -45,7 +48,7 @@ const ProjectCard = ({ project, index }) => {
             </span>
           ))}
         </div>
-      </div>
+      </motion.div>
     </motion.div>
   );
 };
