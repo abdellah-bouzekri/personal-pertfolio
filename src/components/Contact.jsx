@@ -1,6 +1,7 @@
 import React from "react";
 import { CONTACT } from "../constants";
 import { motion } from "framer-motion";
+import { HeartIcon, Loader2 } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -30,6 +31,9 @@ const Contact = () => {
         <a href="#" className="border-b ">
           {CONTACT.email}
         </a>
+      </div>
+      <div className="flex justify-center  items-center mt-4">
+        <HeartIcon className="h-12 w-12 animate-pulse text-indigo-900" />
       </div>
     </div>
   );
