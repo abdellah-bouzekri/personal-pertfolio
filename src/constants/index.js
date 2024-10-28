@@ -2,6 +2,7 @@ import project1 from "../assets/projects/Space-Shot2.png";
 import project2 from "../assets/projects/Movie-App.png";
 import project3 from "../assets/projects/Code-Pen.png";
 import project4 from "../assets/projects/Shopping.png";
+import project5 from "../assets/projects/Blog.png";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -39,6 +40,14 @@ export const PROJECTS = [
       "A Shopping search 🛍️ A Shopping search is a web application that allows users to search for products and view product details .",
     technologies: ["Tailwind", "CSS", "React", "mySQL"],
     LinkTo: "https://shopping-search.vercel.app/",
+  },
+  {
+    title: "Blog Application",
+    image: project5,
+    description:
+      "A Blog Application 📚 A Blog Application is a web application that allows users to see the leatest blog its Done with next js and sanity ",
+    technologies: ["Tailwind", "CSS", "Next js", "Sanity"],
+    LinkTo: "https://blog-sanity-mu.vercel.app/",
   },
 ];
 
